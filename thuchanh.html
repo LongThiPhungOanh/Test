@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // bai1
+  var arr = [5,8,3,1,10,9,2,4,6,7];
+
+  function findMaxScore(arr) {
+    var max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    return max;
+  }
+
+  document.write("max= " + findMaxScore(arr) + "<br/>");
+
+
+
+  //bai2
+
+  function evenFilter(arr) {
+  var newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i]%2===0) {
+    newArr.push(arr[i]);
+    newArr.p
+  }
+  }
+  return newArr;
+ }
+
+document.write("newArr= " + evenFilter(arr));
+</script>
+</body>
+</html>
