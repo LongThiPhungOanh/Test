@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function capcu(thamso){
+      var sonhatnhat = document.getElementById("number1").value;
+      var sothuhai = document.getElementById("number2").value;
+      var kq;
+      if(thamso == "cong"){
+          kq = parseInt(sonhatnhat) + parseInt(sothuhai);
+      }else if(thamso == "tru"){
+          kq = sonhatnhat - sothuhai;
+      }else if(thamso == "nhan"){
+          kq = sonhatnhat * sothuhai;
+      }else if (thamso == "chia"){
+          kq = sonhatnhat / sothuhai;
+      }
+      document.getElementById("result").innerHTML = kq;
+
+
+  }
+</script>
+  <h2>Caculator</h2>
+<tr>
+      <input id="number1" type="number">
+      <input id="number2" type="number"> <br><br>
+</tr>
+    <tr>
+     <button onclick="capcu('cong')">Adition(+)</button>
+      <button onclick="capcu('tru')">Subtraction(-)</button>
+      <button onclick="capcu('nhan')">Multiplivation(*)</button>
+      <button onclick="capcu('chia')">Division(/)</button>
+      <br>
+    </tr>
+  <h3 id="result">Result Division:</h3>
+</body>
+</html>
